@@ -12,8 +12,8 @@
     "bootstrap": "^5.3.3",
     "jspdf": "^2.5.2",
     "papaparse": "^5.5.1",
-    "react": "^18.17.0",           // Change to React 18
-    "react-dom": "^18.17.0",       // React DOM version aligned with React 18
+    "react": "^18.17.0",
+    "react-dom": "^18.17.0",
     "react-router-dom": "^6.28.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
