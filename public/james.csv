@@ -1,0 +1,104 @@
+Pathology,Observation,Impression,is_side,is_lobe,is_mm
+Normal,"<p><b>INFRATENTORIAL REGION:-</b></p>
+<p>Cerebellar hemispheres are normal.</p>
+<p>4th ventricle is normal in size.</p>
+<p>Brainstem is normal.</p>
+<p><b>SUPRATENTORIAL REGION:-</b></p>
+<p>Attenuation values of brain parenchyma are normal and show normal gray/ white matter differentiation.</p>
+<p>No evidence of intracerebral/subdural bleed/ infarct.</p>
+<p>Basal cisterns are normal.</p>
+<p>3rd and lateral ventricles are normal.</p>
+<p>Cortical sulci and sylvian fissures are normal.</p>
+<p>No focal mass lesion.</p>
+<p>No evidence of calcification.</p>
+<p>No midline shift.</p>
+<p>Rest of the Visualised paranasal sinuses are normal.</p>.
+
+Bones and soft tissues are normal.",Essentially normal study of the brain.,FALSE,FALSE,FALSE
+Mucosal thickening,Bilateral minimal mucosal thickening seen in maxillary and ethmoid sinus,Essentially normal study of the brain.,TRUE,FALSE,FALSE
+Atrophy,"Sulci, ventricles and cisterns are prominent in caliber – suggestive of diffuse cerebral atrophy.",Diffused cerebral atrophy.,FALSE,FALSE,FALSE
+Ischemic changes,"The ventricles are dilated, indicating hydrocephalus. There is no evidence of obstruction in the ventricular system.",Small vessel ischemic changes.,FALSE,FALSE,FALSE
+EDH,Extra axial lenticular hyperdensity of blood CT attenuation noted along right frontal convexity causing minimal mass effect in the form of effacement of adjacent sulcal spaces - in view of history of trauma - suggestive of EDH.,Extra axial lenticular hyperdensity of blood CT attenuation noted along right frontal convexity causing minimal mass effect in the form of effacement of adjacent sulcal spaces - in view of history of trauma - suggestive of EDH,TRUE,FALSE,TRUE
+SDH,Thin extra axial crescentric hyperdensity of blood attenuation noted along posterior falx cerebri left tentorium cerebelli and right transverse sinus in view of history of trauma - likely SDH.,Thin extra axial crescentric hyperdensity of blood attenuation noted along posterior falx cerebri left tentorium cerebelli and right transverse sinus in view of history of trauma - likely SDH.,FALSE,FALSE,FALSE
+Fracture,"Fracture of the [skull bone] is visible, with possible involvement of the dura. No intracranial hemorrhage is noted.","Skull fracture identified. No significant intracranial hemorrhage, but further imaging may be required for the full assessment.",TRUE,TRUE,TRUE
+Cerebral Atrophy,There is generalized cortical atrophy noted in the [frontal/temporal/other] lobes with widening of sulci and enlargement of ventricles.,"Cerebral atrophy noted, likely age-related or secondary to neurodegenerative processes. Follow-up recommended.",FALSE,FALSE,FALSE
+Encephalomalacia,"There is evidence of brain softening or encephalomalacia in the [location], consistent with a previous infarction or injury.","Encephalomalacia in the [location], likely secondary to a previous ischemic event. Further neuroimaging may be needed.",FALSE,TRUE,FALSE
+Chiari Malformation,"The cerebellar tonsils are herniated into the foramen magnum, suggesting a Chiari malformation.",Chiari malformation type I identified. Neurological consultation is recommended to assess for symptoms and surgical options.,TRUE,FALSE,FALSE
+Pathology,Observation,Impression,is_side,is_lobe,is_mm
+Normal,"<b>INFRATENTORIAL REGION:-</b>
+
+Cerebellar hemispheres are normal.
+
+4th ventricle is normal in size.
+
+Brainstem is normal.
+
+<b>SUPRATENTORIAL REGION:-</b>
+
+Attenuation values of brain parenchyma are normal and show normal gray/ white matter differentiation.
+
+No evidence of intracerebral/subdural bleed/ infarct.
+
+Basal cisterns are normal.
+
+3rd and lateral ventricles are normal.
+
+Cortical sulci and sylvian fissures are normal.
+
+No focal mass lesion.
+
+No evidence of calcification.
+
+No midline shift.
+
+Rest of the Visualised paranasal sinuses are normal.
+
+Bones and soft tissues are normal.",Essentially normal study of the brain.,FALSE,FALSE,FALSE
+Mucosal thickening,Bilateral minimal mucosal thickening seen in maxillary and ethmoid sinus,Essentially normal study of the brain.,TRUE,FALSE,FALSE
+Atrophy,"Sulci, ventricles and cisterns are prominent in caliber – suggestive of diffuse cerebral atrophy.",Diffused cerebral atrophy.,FALSE,FALSE,FALSE
+Ischemic changes,"The ventricles are dilated, indicating hydrocephalus. There is no evidence of obstruction in the ventricular system.",Small vessel ischemic changes.,FALSE,FALSE,FALSE
+EDH,Extra axial lenticular hyperdensity of blood CT attenuation noted along right frontal convexity causing minimal mass effect in the form of effacement of adjacent sulcal spaces - in view of history of trauma - suggestive of EDH.,Extra axial lenticular hyperdensity of blood CT attenuation noted along right frontal convexity causing minimal mass effect in the form of effacement of adjacent sulcal spaces - in view of history of trauma - suggestive of EDH,TRUE,FALSE,TRUE
+SDH,Thin extra axial crescentric hyperdensity of blood attenuation noted along posterior falx cerebri left tentorium cerebelli and right transverse sinus in view of history of trauma - likely SDH.,Thin extra axial crescentric hyperdensity of blood attenuation noted along posterior falx cerebri left tentorium cerebelli and right transverse sinus in view of history of trauma - likely SDH.,FALSE,FALSE,FALSE
+Fracture,"Fracture of the [skull bone] is visible, with possible involvement of the dura. No intracranial hemorrhage is noted.","Skull fracture identified. No significant intracranial hemorrhage, but further imaging may be required for the full assessment.",TRUE,TRUE,TRUE
+Cerebral Atrophy,There is generalized cortical atrophy noted in the [frontal/temporal/other] lobes with widening of sulci and enlargement of ventricles.,"Cerebral atrophy noted, likely age-related or secondary to neurodegenerative processes. Follow-up recommended.",FALSE,FALSE,FALSE
+Encephalomalacia,"There is evidence of brain softening or encephalomalacia in the [location], consistent with a previous infarction or injury.","Encephalomalacia in the [location], likely secondary to a previous ischemic event. Further neuroimaging may be needed.",FALSE,TRUE,FALSE
+Chiari Malformation,"The cerebellar tonsils are herniated into the foramen magnum, suggesting a Chiari malformation.",Chiari malformation type I identified. Neurological consultation is recommended to assess for symptoms and surgical options.,TRUE,FALSE,FALSE
+Pathology,Observation,Impression,is_side,is_lobe,is_mm
+Normal,"<b>INFRATENTORIAL REGION:-</b>
+
+Cerebellar hemispheres are normal.
+
+4th ventricle is normal in size.
+
+Brainstem is normal.
+
+<b>SUPRATENTORIAL REGION:-</b>
+
+Attenuation values of brain parenchyma are normal and show normal gray/ white matter differentiation.
+
+No evidence of intracerebral/subdural bleed/ infarct.
+
+Basal cisterns are normal.
+
+3rd and lateral ventricles are normal.
+
+Cortical sulci and sylvian fissures are normal.
+
+No focal mass lesion.
+
+No evidence of calcification.
+
+No midline shift.
+
+Rest of the Visualised paranasal sinuses are normal.
+
+Bones and soft tissues are normal.",Essentially normal study of the brain.,FALSE,FALSE,FALSE
+Mucosal thickening,Bilateral minimal mucosal thickening seen in maxillary and ethmoid sinus,Essentially normal study of the brain.,TRUE,FALSE,FALSE
+Atrophy,"Sulci, ventricles and cisterns are prominent in caliber – suggestive of diffuse cerebral atrophy.",Diffused cerebral atrophy.,FALSE,FALSE,FALSE
+Ischemic changes,"The ventricles are dilated, indicating hydrocephalus. There is no evidence of obstruction in the ventricular system.",Small vessel ischemic changes.,FALSE,FALSE,FALSE
+EDH,Extra axial lenticular hyperdensity of blood CT attenuation noted along right frontal convexity causing minimal mass effect in the form of effacement of adjacent sulcal spaces - in view of history of trauma - suggestive of EDH.,Extra axial lenticular hyperdensity of blood CT attenuation noted along right frontal convexity causing minimal mass effect in the form of effacement of adjacent sulcal spaces - in view of history of trauma - suggestive of EDH,TRUE,FALSE,TRUE
+SDH,Thin extra axial crescentric hyperdensity of blood attenuation noted along posterior falx cerebri left tentorium cerebelli and right transverse sinus in view of history of trauma - likely SDH.,Thin extra axial crescentric hyperdensity of blood attenuation noted along posterior falx cerebri left tentorium cerebelli and right transverse sinus in view of history of trauma - likely SDH.,FALSE,FALSE,FALSE
+Fracture,"Fracture of the [skull bone] is visible, with possible involvement of the dura. No intracranial hemorrhage is noted.","Skull fracture identified. No significant intracranial hemorrhage, but further imaging may be required for the full assessment.",TRUE,TRUE,TRUE
+Cerebral Atrophy,There is generalized cortical atrophy noted in the [frontal/temporal/other] lobes with widening of sulci and enlargement of ventricles.,"Cerebral atrophy noted, likely age-related or secondary to neurodegenerative processes. Follow-up recommended.",FALSE,FALSE,FALSE
+Encephalomalacia,"There is evidence of brain softening or encephalomalacia in the [location], consistent with a previous infarction or injury.","Encephalomalacia in the [location], likely secondary to a previous ischemic event. Further neuroimaging may be needed.",FALSE,TRUE,FALSE
+Chiari Malformation,"The cerebellar tonsils are herniated into the foramen magnum, suggesting a Chiari malformation.",Chiari malformation type I identified. Neurological consultation is recommended to assess for symptoms and surgical options.,TRUE,FALSE,FALSE

@@ -1,87 +1,118 @@
 /* Styling for the overall layout */
 .layout-content {
-    padding: 20px;
-    position: fixed;
-  }
-  
-  /* Canvas Styles (Fixed on the left side) */
-  .left-column {
-    position: relative;
-    height: 100vh; /* Full height */
-    overflow-y: auto; /* Enable vertical scrolling */
-  }
-  
-  .canvas-card {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f0f0f0;
-  }
-  
-  .canvas {
-    width: 100%;
-    height: 100%;
-    background-color: #dcdcdc;
-    border: 1px solid #aaa;
-    /* Example canvas style */
-  }
-  
-  /* Styles for the report column (right side) */
-  .report-column {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .generated-report {
-    padding: 10px;
-    margin-bottom: 16px;
-  }
-  
-  .generated-report pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-  
-  .context-holder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  padding: 20px;
+  position: fixed;
+}
 
+/* Canvas Styles (Fixed on the left side) */
+.left-column {
+  position: relative;
+  height: 100vh; /* Full height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
 
+.canvas-card {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+}
 
+.canvas {
+  width: 100%;
+  height: 100%;
+  background-color: #dcdcdc;
+  border: 1px solid #aaa;
+  /* Example canvas style */
+}
 
-  /* Apply to all scrollable elements */
+/* Styles for the report column (right side) */
+.report-column {
+  position: relative;
+  overflow: hidden;
+}
+
+.generated-report {
+  padding: 10px;
+  margin-bottom: 16px;
+}
+
+.generated-report pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Adjusted Title Styles with Fixed Position */
+.generated-report .ant-card-head {
+  position: sticky;
+  top: 0; /* Fix the title at the top of the card */
+  padding: 4px 16px; /* Reduce padding for smaller height */
+  font-size: 12px; /* Smaller font size */
+  line-height: 16px; /* Adjust line height */
+  font-weight: bold;
+  background-color: #fff; /* Ensure background color matches */
+  border-bottom: 1px solid #ddd; /* Optional border */
+  z-index: 1; /* Ensure title stays on top of other content */
+}
+
+/* Context Holder Styles */
+.context-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Apply to all scrollable elements */
 *::-webkit-scrollbar {
-    width: 8px; /* Width of the scrollbar */
-    height: 8px; /* Height for horizontal scrollbar (optional) */
-  }
-  
-  *::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Background color of the track */
-  }
-  
-  *::-webkit-scrollbar-thumb {
-    background: #888; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Optional: rounded corners */
-  }
-  
-  *::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Hover state of the scrollbar thumb */
-  }
-  
-  /* Firefox scrollbar styles */
-  * {
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #888 #f1f1f1; /* Thumb color and track color for Firefox */
-  }
-  
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height for horizontal scrollbar (optional) */
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the track */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Hover state of the scrollbar thumb */
+}
+
+/* Firefox scrollbar styles */
+* {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #888 #f1f1f1; /* Thumb color and track color for Firefox */
+}
+.generated-report {
+  font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+  font-size: 12px; /* Set font size to 9px */
+  line-height: 1.6; /* Set line height to 1.15 */
+}
+/* Styles for bold */
+.generated-report b {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styles for italic */
+.generated-report i {
+  font-style: italic;
+}
+
+/* Custom styles for headings */
+.generated-report h1, .generated-report h2, .generated-report h3 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
+}

@@ -1,12 +1,40 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect ,useRef} from 'react';
 import { Row, Col, Card, Button, Radio, notification, Layout, Typography, Space, Input, List, Tag, Select, message } from 'antd';
 import Papa from 'papaparse';
 import './home.css'
+import { CopyOutlined } from '@ant-design/icons';
+
+const handleCopy = (ref) => {
+  const range = document.createRange();  // Create a range object
+  const selection = window.getSelection(); // Get the current selection object
+
+  range.selectNodeContents(ref.current);  // Select all content of the specified node
+  selection.removeAllRanges();  // Remove any existing selections
+  selection.addRange(range);  // Add the new range
+
+  try {
+    // Execute the copy command, copying the selected content to clipboard
+    const successful = document.execCommand('copy');
+    if (successful) {
+      message.success('Content copied !');
+    } else {
+      message.error('Failed to copy content!');
+    }
+  } catch (err) {
+    console.error('Error copying content: ', err);
+    message.error('Failed to copy content!');
+  }
+
+  // Clear the selection after copying
+  selection.removeAllRanges();
+};
 
 const { Content } = Layout;
 const { Text } = Typography;
 
 function Home() {
+  const OreportRef = useRef(null);
+  const IreportRef = useRef(null);
   const [selectedPathology, setSelectedPathology] = useState('');
   const [pathologyData, setPathologyData] = useState([]);
   const [selectedSide, setSelectedSide] = useState([]);
@@ -17,12 +45,13 @@ function Home() {
   const [impressions, setImpressions] = useState([]);
   const [step, setStep] = useState(1); // Step-wise flow for Pathology → Side → Lobe → MM
   const [searchTerm, setSearchTerm] = useState(''); // Define the searchTerm state
-  const [report, setReport] = useState(''); // Store the generated report
+  const [Oreport, setOReport] = useState(''); // Store the generated report
+  const [Ireport, setIReport] = useState('');
   const [messageApi, contextHolder] = message.useMessage();
 
   // Load CSV data from public directory
   useEffect(() => {
-    fetch('./mahesh.csv')
+    fetch('./james.csv')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -128,24 +157,18 @@ function Home() {
   const handleGenerateReport = () => {
     // Create formatted observations and impressions with bullet points
     const observationsList = selectedPathologies.map((pathology, index) => {
-      return `- ${observations[index]}`; // Add bullet points to each observation
+      return `${observations[index]} </br>`; // Add bullet points to each observation
     }).join("\n");
   
     const impressionsList = selectedPathologies.map((pathology, index) => {
-      return `- ${impressions[index]}`; // Add bullet points to each impression
+      return `&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp•&nbsp&nbsp${impressions[index]}</br>`; // Add bullet points to each impression
     }).join("\n");
   
     // Combine the observations and impressions into the report content
-    const reportContent = `
-      Observation:
-      ${observationsList}
-  
-      Impression:
-      ${impressionsList}
-    `;
-  
+    
     // Set the generated report to state
-    setReport(reportContent);
+    setOReport(observationsList);
+    setIReport(impressionsList);
   };
 
   return (
@@ -259,40 +282,60 @@ function Home() {
 
           {/* Right Column: Report Section */}
           <Col span={13} className="report-column" style={{ position: 'relative', maxHeight: '100vh' }}>
-            <Row gutter={16}>
-              {/* Observation Section */}
-              <Col span={24}>
-                <Card title="Observation" className="generated-report" style={{ height: '200px', overflowY: 'auto' }}>
-                  <pre>{report}</pre>
-                </Card>
-              </Col>
+      <Row gutter={16}>
+        {/* Observation Section */}
+        <Col span={24}>
+          <Card
+            title={<span style={{ fontSize: '14px', fontWeight: 'bold' }}>Observation</span>}
+            className="generated-report"
+            style={{ height: '50vh', overflowY: 'auto' }}
+            extra={
+              <Button
+                icon={<CopyOutlined />}
+                onClick={() => handleCopy(OreportRef)}
+                size="small"
+              >
+                Copy
+              </Button>
+            }
+          >
+            <div ref={OreportRef} dangerouslySetInnerHTML={{ __html: Oreport }} />
+          </Card>
+        </Col>
 
-              {/* Impression Section */}
-              <Col span={24}>
-                <Card title="Impression" className="generated-report" style={{ height: '200px', overflowY: 'auto' }}>
-                  <pre>{report}</pre>
-                </Card>
-              </Col>
+        {/* Impression Section */}
+        <Col span={24}>
+          <Card
+            title={<span style={{ fontSize: '14px', fontWeight: 'bold' }}>Impression</span>}
+            className="generated-report"
+            style={{ height: '20vh', overflowY: 'auto' }}
+            extra={
+              <Button
+                icon={<CopyOutlined />}
+                onClick={() => handleCopy(IreportRef)}
+                size="small"
+              >
+                Copy
+              </Button>
+            }
+          >
+            <div ref={IreportRef} dangerouslySetInnerHTML={{ __html: Ireport }} />
+          </Card>
+        </Col>
 
-              {/* Advice Section */}
-              <Col span={24}>
-                <Card title="Advice" className="generated-report" style={{ height: '200px', overflowY: 'auto' }}>
-                  <pre>{report}</pre>
-                </Card>
-              </Col>
+        {/* Generate Report Button */}
+        <Col span={24}>
+          <Button
+            type="primary"
+            onClick={handleGenerateReport}
+            style={{ width: '100%' }}
+          >
+            Generate Report
+          </Button>
+        </Col>
+      </Row>
+    </Col>
 
-              {/* Generate Report Button */}
-              <Col span={24}>
-                <Button
-                  type="primary"
-                  onClick={handleGenerateReport}
-                  style={{ width: '100%' }}
-                >
-                  Generate Report
-                </Button>
-              </Col>
-            </Row>
-          </Col>
         </Row>
       </Content>
       {contextHolder}
